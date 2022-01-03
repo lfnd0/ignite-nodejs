@@ -59,3 +59,24 @@
    - Egg.js;
    - Nest.js;
    - Adonis.js.
+
+### Conceitos sobre API Rest:
+1. O que é uma API?
+   - Interface de Programação de Aplicativos, do acrônimo em inglês, Application Programming Interface;
+   - Conjunto de especificações de possíveis interações entre aplicações;
+   - Documentação para o desenvolvedor.
+2. O que é o Rest?
+   - Transferência Representacional de Estado, do acrônimo em inglês, Representation State Transfer;
+   - Modelo de arquitetura.
+3. As 6 regras da arquitetura Rest:
+   - Client-server;
+   - Stateless;
+   - Cache;
+   - Interface uniforme:
+     - Identificação dos recursos;
+     - Representação dos recursos;
+     - Mensagens auto-descritivas;
+     - HATEOAS:
+       - Hypertext as the Engine of Application State.
+   - Camadas;
+   - Código sob demanda.
