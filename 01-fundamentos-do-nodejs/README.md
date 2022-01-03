@@ -134,9 +134,10 @@
 
 ### Comandos úteis:
 - Criação de um projeto Node.js:
-
-  `yarn init -y`
+  > yarn init -y
 
 - Instalação de dependências:
+  > yarn add nome-da-dependencia
 
-  `yarn add nome-da-dependencia`
+- Instalação de dependências de desenvolvimento:
+  > yarn add nome-da-dependencia -D
