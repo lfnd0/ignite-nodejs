@@ -80,3 +80,54 @@
        - Hypertext as the Engine of Application State.
    - Camadas;
    - Código sob demanda.
+
+### Métodos de requisição (HTTP verbs):
+1. Métodos de requisição:
+   - GET: leitura;
+   - POST: criação;
+   - PUT: atualização;
+   - DELETE: remoção;
+   - PATCH: atualização parcial.
+2. HTTP codes:
+   - 1xx:
+     - Informativo;
+     - A solicitação foi aceita ou o processo continua em andamento.
+   - 2xx:
+     - Confirmação;
+     - 200: requisição bem sucedida;
+     - 201: geralmente utilizado para POST após uma inserção (created).
+   - 3xx:
+     - Redirecionamento;
+     - 301: moved permanently;
+     - 302: moved.
+   - 4xx:
+     - Erro no cliente;
+     - 400: bad request;
+     - 401: unauthorized;
+     - 403: forbidden;
+     - 404: not found;
+     - 422: unprocessable entity.
+   - 5xx:
+     - Erro no servidor, ou seja, o servidor falhou ao concluir uma solicitação;
+     - 500: internal server error;
+     - 502: bad gateway.
+3. Parâmetros das requisições:
+   - Header params;
+   - Query params:
+     - Chave, valor e separação.
+   - Route params;
+   - Body params.
+4. Boas práticas para APIs Rest:
+   - A utilização correta dos métodos HTTP;
+   - A utilização correta dos status code no retorno das respostas;
+   - Padrão de nomenclatura:
+     - Busca de usuários:
+       - GET: http://localhost:3333/v1/users.
+     - Busca de usuários por ID:
+       - GET: http://localhost:3333/v1/users/1.
+     - Busca de endereço do usuário:
+       - GET: http://localhost:3333/v1/users/1/address.
+     - Remoção de um usuário:
+       - DELETE: http://localhost:3333/v1/users/1.
+     - Atualização do status do usuário:
+       - PATCH: http://localhost:3333/v1/users/1/status.
