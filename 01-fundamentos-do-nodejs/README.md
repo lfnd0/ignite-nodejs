@@ -12,7 +12,7 @@
 
 ### O que será visto neste módulo?
 1. Fundamentos do Node.js:
-   - O que é? 
+   - O que é?
    - Como funciona?
    - Quais problemas o Node.js resolve?
    - Por que foi criado/desenvolvido?
@@ -131,3 +131,12 @@
        - DELETE: http://localhost:3333/v1/users/1.
      - Atualização do status do usuário:
        - PATCH: http://localhost:3333/v1/users/1/status.
+
+### Comandos úteis:
+- Criação de um projeto Node.js:
+
+  `yarn init -y`
+
+- Instalação de dependências:
+
+  `yarn add nome-da-dependencia`
