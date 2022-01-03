@@ -131,6 +131,10 @@
        - DELETE: http://localhost:3333/v1/users/1.
      - Atualização do status do usuário:
        - PATCH: http://localhost:3333/v1/users/1/status.
+5. Tipos de parâmetros:
+   - Route params: identificar um recurso (editar, remover e buscar);
+   - Query params: paginação e filtro;
+   - Body params: os objetos de inserção ou alteração.
 
 ### Comandos úteis:
 - Criação de um projeto Node.js:
