@@ -22,3 +22,40 @@
    - O que são os status code?
    - O que são os parâmetros?
 3. Construção de APIs com base nos conceitos aprendidos.
+
+### Conceitos do Node.js:
+1. O que é Node.js?
+   - Plataforma open-source que permite a execução da linguagem JavaScript do lado do servidor;
+   - Composto pelo:
+     - V8;
+     - libuv;
+     - Conjunto de módulos.
+2. O que o Node.js veio resolver?
+   - Ryan Dahl;
+   - Barra de progresso do Flickr;
+   - Tecnologias da época não davam um bom suporte aos processos de I/O.
+3. Características do Node.js:
+   - Arquitetura do event loop:
+     - Call stack.
+     - Single thread;
+     - Non-blocking I/O;
+     - Módulos próprios:
+     - http;
+     - dns;
+     - fs;
+     - buffer;
+     - ...
+4. Event loop:
+   - Call stack;
+   - O event loop "ouve" uma requisição por vez da call stack;
+   - É single thread e utiliza a estrutura de dados pilha;
+   - Repassa o processamento da pilha para até 4 threads, de acordo com a disponibilidade destas threads.
+5. O que são gerenciadores de pacotes?
+   - NPM e Yarn;
+   - Instalar bibliotecas externas;
+   - Disponibilizar bibliotecas.
+6. Frameworks:
+   - Express.js;
+   - Egg.js;
+   - Nest.js;
+   - Adonis.js.
