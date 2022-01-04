@@ -128,6 +128,23 @@ app.get('/account', verifyIfExistsAccountCPF, (request, response) => {
   return response.json(customer);
 });
 
+app.delete('/account', verifyIfExistsAccountCPF, (request, response) => {
+  const { customer } = request;
+
+  const customerIndex = customers.indexOf(customer);
+  customers.splice(customerIndex, 1);
+
+  return response.status(200).json(customers);
+});
+
+app.get('/balance', verifyIfExistsAccountCPF, (request, response) => {
+  const { customer } = request;
+
+  const balance = getBalance(customer.statement);
+
+  return response.json({ message: balance });
+});
+
 app.listen(port, () => {
   console.log(`Active app at: http://localhost:${port}`)
 });
