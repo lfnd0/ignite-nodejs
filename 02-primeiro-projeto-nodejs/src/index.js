@@ -110,7 +110,7 @@ app.get('/statement/date', verifyIfExistsAccountCPF, (request, response) => {
     new Date(dateFormat).toDateString()
   );
 
-  return response.json(customer.statement);
+  return response.json(statement);
 });
 
 app.put('/account', verifyIfExistsAccountCPF, (request, response) => {
