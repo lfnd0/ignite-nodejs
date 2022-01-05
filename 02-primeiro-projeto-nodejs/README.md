@@ -44,7 +44,7 @@
 
 ### Comandos úteis:
 - Instalação das dependências da aplicação:
-> yarn
+  > yarn
 
 - Execução do projeto:
-> yarn dev
+  > yarn dev
