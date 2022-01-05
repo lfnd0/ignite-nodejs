@@ -147,4 +147,4 @@
   > yarn add nome-da-dependencia -D
 
 - Execução do projeto
-> yarn dev
+  > yarn dev
