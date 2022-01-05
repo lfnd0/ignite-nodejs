@@ -41,3 +41,10 @@
 - [x] Não dever ser possível fazer saque em uma conta não existente.
 - [x] Não dever ser possível fazer saque quando o saldo for insuficiente.
 - [x] Não dever ser possível excluir uma conta não existente.
+
+### Comandos úteis:
+- Instalação das dependências da aplicação:
+> yarn
+
+- Execução do projeto:
+> yarn dev
