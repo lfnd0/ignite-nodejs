@@ -146,5 +146,5 @@
 - Instalação de dependências de desenvolvimento:
   > yarn add nome-da-dependencia -D
 
-- Execução do projeto
+- Execução do projeto:
   > yarn dev
