@@ -24,3 +24,4 @@
 - [Fundamentos do Node.js](01-fundamentos-do-nodejs)
 - [Primeiro projeto com Node.js](02-primeiro-projeto-nodejs)
 - [Desafio 1: conceitos do Node.js](https://github.com/lfnd0/ignite-desafio1-conceitos-nodejs)
+- [Desafio 2: trabalhando com middlewares](https://github.com/lfnd0/ignite-desafio2-middlewares)
