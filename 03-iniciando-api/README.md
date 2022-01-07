@@ -91,3 +91,6 @@
 - Preciso tipar todas as variáveis? *MITO!*
 - O TypeScript veio para transformar JavaScript em um C# ou em um Java? *MITO!*
 - O TypeScript auxilia no desenvolvimento? *VERDADE!*
+
+### ESLint e Prettier
+Acesse o [link](https://bit.ly/3eXVNtt) para o tutorial de configurações do [ESLint](https://eslint.org/docs/user-guide/getting-started) e do [Prettier](https://prettier.io/docs/en/index.html).
