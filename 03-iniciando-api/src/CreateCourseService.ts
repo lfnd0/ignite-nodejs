@@ -1,12 +1,12 @@
 interface ICourse {
   name: string;
-  duration: number;
+  duration?: number;
   educator: string;
 }
 
 class CreateCourseService {
 
-  execute({ name, educator, duration }: ICourse) {
+  execute({ name, educator, duration = 8 }: ICourse) {
     console.log(name, educator, duration);
   };
 }
