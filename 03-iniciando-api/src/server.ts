@@ -1,11 +1,10 @@
 import express from 'express';
+import { createCourse } from './routes';
 
 const port = 3333;
 const app = express();
 
-app.get('/', (request, response) => {
-  return response.json({ message: 'Hello world!' });
-});
+app.get('/', createCourse);
 
 app.listen(port, () => {
   console.log(`Active app at: http://localhost:${port}`);
