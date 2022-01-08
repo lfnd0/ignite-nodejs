@@ -13,9 +13,7 @@ categoriesRouter.post("/", (request, response) => {
     description,
   };
 
-  categories.push({
-    category,
-  });
+  categories.push(category);
 
   return response.status(201).send();
 });
