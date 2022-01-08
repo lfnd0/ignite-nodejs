@@ -1,4 +1,3 @@
-const { json } = require('express');
 const express = require('express');
 const port = 3333;
 const app = express();
