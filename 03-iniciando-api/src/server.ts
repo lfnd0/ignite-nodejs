@@ -6,7 +6,7 @@ const port = 3333;
 const app = express();
 
 app.use(express.json());
-app.use(categoriesRouter);
+app.use("/categories", categoriesRouter);
 
 app.listen(port, () => {
   console.log(`Active app at: http://localhost:${port}`);
