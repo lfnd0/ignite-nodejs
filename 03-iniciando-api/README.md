@@ -92,5 +92,28 @@
 - O TypeScript veio para transformar JavaScript em um C# ou em um Java? *MITO!*
 - O TypeScript auxilia no desenvolvimento? *VERDADE!*
 
-### ESLint e Prettier
+### Criando projeto com TypeScript:
+1. Criação do `package.json` (projeto):
+   > yarn init -y
+2. Instalação das dependências:
+
+   a. Express.js:
+      > yarn add express
+
+   b. TypeScript (dependência de desenvolvimento):
+      > yarn add typescript -D
+
+   c. Tipagem do Express.js (dependência de desenvolvimento):
+      > yarn add @types/express -D
+
+3. Criação do `tsconfig.json` (arquivo de configurações do TypeScript):
+   > yarn tsc --init
+4. Definição do diretório de transpilação para código JavaScript em `tsconfig.json`:
+   > "outDir": "./dist";
+5. Transpilação do código:
+   > yarn tsc
+6. Execução do projeto:
+   > node dist/server.js
+
+### ESLint e Prettier:
 Acesse o [link](https://bit.ly/3eXVNtt) para o tutorial de configurações do [ESLint](https://eslint.org/docs/user-guide/getting-started) e do [Prettier](https://prettier.io/docs/en/index.html).
