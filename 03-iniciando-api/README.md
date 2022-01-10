@@ -117,3 +117,15 @@
 
 ### ESLint e Prettier:
 Acesse o [link](https://bit.ly/3eXVNtt) para o tutorial de configurações do [ESLint](https://eslint.org/docs/user-guide/getting-started) e do [Prettier](https://prettier.io/docs/en/index.html).
+
+### Entendendo o SOLID:
+- **S**:
+  - SRP: Single Responsability Principle (Princípio da Responsabilidade Única).
+- **O**:
+  - OCP: Open-Closed Principle (Princípio Aberto-Fechado).
+- **L**:
+  - LSP: Liskov Substituion Principle (Princípio da Substituição de Liskov).
+- **I**:
+  - ISP: Interface Segregation Principle (Princípio da Segregação de Interface).
+- **D**:
+  - DIP: Dependency Inversion Principle (Princípio da Inversão de Dependência).
