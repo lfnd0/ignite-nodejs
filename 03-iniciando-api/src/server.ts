@@ -1,15 +1,12 @@
 import express from "express";
 
-import { categoriesRouter } from "./routes/categories.routes";
-import { specificationRouter } from "./routes/specifications.routes";
+import { router } from "./routes";
 
 const port = 3333;
 const app = express();
 
 app.use(express.json());
-
-app.use("/categories", categoriesRouter);
-app.use("/specifications", specificationRouter);
+app.use(router);
 
 app.listen(port, () => {
   console.log(`Active app at: http://localhost:${port}`);
