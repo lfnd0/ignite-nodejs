@@ -129,3 +129,6 @@ Acesse o [link](https://bit.ly/3eXVNtt) para o tutorial de configurações do [E
   - ISP: Interface Segregation Principle (Princípio da Segregação de Interface).
 - **D**:
   - DIP: Dependency Inversion Principle (Princípio da Inversão de Dependência).
+
+### Swagger:
+Link para consulta da documentção do [Swagger](https://swagger.io/specification/).
