@@ -26,3 +26,6 @@
 - [Desafio 1: conceitos do Node.js](https://github.com/lfnd0/ignite-desafio1-conceitos-nodejs)
 - [Desafio 2: trabalhando com middlewares](https://github.com/lfnd0/ignite-desafio2-middlewares)
 - [Desafio 3: corrigindo o código](https://github.com/lfnd0/ignite-desafio3-corrigindo-codigo)
+
+### Chapter II
+- [Iniciando a API](03-iniciando-api)
