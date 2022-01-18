@@ -39,3 +39,36 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
 - Imagens: instruções para criação de um container;
 - O que "roda" localmente "roda" em produção;
 - Um único sistema operacional que compartilha recursos da máquina host.
+
+### Comandos do Docker:
+1. Docker:
+   - Listar todos os containers:
+     > docker ps -a
+   - Listar todos os containers ativos:
+     > docker ps
+   - Iniciar um container:
+     > docker start id | name
+   - Parar um container:
+     > docker stop id | name
+   - Remover um container:
+     > docker rm id | name
+
+2. Docker-compose:
+   - Criar e iniciar um container:
+     > docker-compose up
+   - Parar um container:
+     > Ctrl + C
+   - Iniciar um container (background):
+     > docker-compose start | up -d
+   - Parar um container (background):
+     > docker-compose stop
+   - Remover um container:
+     > docker-compose down
+   - Acessar um container:
+     > docker exec -it id | name /bin/bash
+   - Finalizar o acesso a um container:
+     > Ctrl + D
+   - Visualizar os logs da aplicação:
+     > docker logs id | name
+   - Observar os logs da aplicação durante a execução:
+     > docker logs id | name -f
