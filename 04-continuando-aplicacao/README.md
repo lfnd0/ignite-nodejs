@@ -32,3 +32,10 @@
 
 ### Documentação de instalação do Docker:
 Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da ferramenta. Para instalação nativa do Docker no WSL 2 consulte este [tutorial](https://bit.ly/3FFG9xK).
+
+### O que é o Docker?
+- Uma ferramenta para criação de containers;
+- Container: ambiente isolado;
+- Imagens: instruções para criação de um container;
+- O que "roda" localmente "roda" em produção;
+- Um único sistema operacional que compartilha recursos da máquina host.
