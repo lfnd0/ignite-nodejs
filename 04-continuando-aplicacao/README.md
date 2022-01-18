@@ -31,4 +31,4 @@
 - Entender o processo de autenticação e criptografia de senhas.
 
 ### Documentação de instalação do Docker:
-Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da ferramenta.
+Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da ferramenta. Para instalação nativa do Docker no WSL 2 consulte este [tutorial](https://bit.ly/3FFG9xK).
