@@ -9,7 +9,7 @@
 </h1>
 
 <h2 align="center">
-  API de aluguel de carros
+  RentX (API de aluguel de carros)
 </h2>
 
 <br>
