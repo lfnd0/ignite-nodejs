@@ -72,3 +72,10 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
      > docker logs id | name
    - Observar os logs da aplicação durante a execução:
      > docker logs id | name -f
+
+### Conhecendo as formas de usar banco de dados:
+- Driver: [node-postgres](https://node-postgres.com/);
+- Query builder: [Knex.js](https://knexjs.org/);
+- ORM (mapeamento objeto-relacional):
+  - [Sequelize](https://sequelize.org/);
+  - [TypeORM](https://typeorm.io/#/).
