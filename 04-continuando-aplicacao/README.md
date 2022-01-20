@@ -79,3 +79,10 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
 - ORM (mapeamento objeto-relacional):
   - [Sequelize](https://sequelize.org/);
   - [TypeORM](https://typeorm.io/#/).
+
+### Aprendendo o conceito de migrations
+- Uma forma de versionar o schema da aplicação;
+- Trabalha com a manipulação do banco de dados:
+  - Criação, alteração e remoção.
+- Controla as alterações do banco de dados juntamente com o versionamento da aplicação;
+- Permite o compartilhamento das alterações realizadas.
