@@ -94,3 +94,31 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
   > yarn typeorm migration:run
 - Remover uma migration do banco de dados:
   > yarn typeorm migration:revert
+
+### Entendendo autenticação com JWT (JSON Web Token):
+- São os tokens que garantem que um usuário esteja autenticado na aplicação;
+- Garantem determinadas permissões dentro do sistema para usuários específicos;
+- Estruturas que compõem um token:
+  - Header:
+    ```{JSON}
+    {
+      "alg": "HS256",
+      "typ": "JWT"
+    }
+    ```
+  - Payload:
+    ```{JSON}
+    {
+      "sub": "1234567890",
+      "name": "Logan",
+      "iat": 1516239022
+    }
+    ```
+  - Verify signature:
+    ```
+    HMACSHA256(
+    base64UrlEncode(header) + "." +
+    base64UrlEncode(payload),
+    your-256-bit-secret
+    )
+    ```
