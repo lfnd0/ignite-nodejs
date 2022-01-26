@@ -91,6 +91,6 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
 - Criar uma migration:
   > yarn typeorm migration:create -n model-name
 - Aplicar uma migration no banco de dados:
-  > yarn typeorm migration:rn
+  > yarn typeorm migration:run
 - Remover uma migration do banco de dados:
   > yarn typeorm migration:revert
