@@ -6,11 +6,11 @@
 
 <h1 align="center">
   Iniciando a API
-</h1>
 
-<h2 align="center">
+  <br>
+
   API de aluguel de carros
-</h2>
+</h1>
 
 <br>
 
