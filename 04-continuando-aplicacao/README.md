@@ -6,11 +6,11 @@
 
 <h1 align="center">
   Continuando a aplicação
-</h1>
 
-<h2 align="center">
+  <br>
+
   RentX (API de aluguel de carros)
-</h2>
+</h1>
 
 <br>
 
