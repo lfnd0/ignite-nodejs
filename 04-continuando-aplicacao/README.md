@@ -56,6 +56,10 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
      > docker logs id | name
    - Observar os logs da aplicação durante a execução:
      > docker logs id | name -f
+   - Acessar um container:
+     > docker exec -it id | name /bin/bash
+   - Finalizar o acesso a um container:
+     > Ctrl + D
 
 2. Docker-compose:
    - Criar e iniciar um container:
@@ -68,10 +72,6 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
      > docker-compose stop
    - Remover um container:
      > docker-compose down
-   - Acessar um container:
-     > docker exec -it id | name /bin/bash
-   - Finalizar o acesso a um container:
-     > Ctrl + D
 
 ### Conhecendo as formas de usar banco de dados:
 - Driver: [node-postgres](https://node-postgres.com/);
