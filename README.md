@@ -29,5 +29,5 @@
 
 ### Chapter II
 - [Iniciando a API](03-iniciando-api)
-- [Desafio 1: introdução ao SOLID](https://github.com/lfnd0/ignite-desafio1-introducao-solid/tree/8564281f38b9f0836b9fba4ff5525b79e28065f5)
+- [Desafio 1: introdução ao SOLID](https://github.com/lfnd0/ignite-desafio1-introducao-solid)
 - [Desafio 2: documentando com Swagger](https://github.com/lfnd0/ignite-desafio1-introducao-solid/tree/1e8cb34da5fddd9c3aec6d8f97207a4a37129ced)
