@@ -5,7 +5,11 @@
 <br>
 
 <h1 align="center">
-  Ignite - Trilha Node.js (aulas)
+  Ignite
+
+  <br>
+
+  Trilha Node.js (aulas)
 </h1>
 
 <br>
@@ -31,3 +35,6 @@
 - [Iniciando a API](03-iniciando-api)
 - [Desafio 1: introdução ao SOLID](https://github.com/lfnd0/ignite-desafio1-introducao-solid)
 - [Desafio 2: documentando com Swagger](https://github.com/lfnd0/ignite-desafio1-introducao-solid)
+
+### Chapter III
+- [Continuando a aplicação](04-continuando-aplicacao)
