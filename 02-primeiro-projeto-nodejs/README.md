@@ -6,11 +6,11 @@
 
 <h1 align="center">
   Primeiro projeto com Node.js
-</h1>
 
-<h2 align="center">
-  FinAPI - API de finanças
-</h2>
+  <br>
+
+  FinAPI (API de finanças)
+</h1>
 
 <br>
 
