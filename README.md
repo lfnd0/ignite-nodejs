@@ -38,3 +38,4 @@
 
 ### Chapter III
 - [Continuando a aplicação](04-continuando-aplicacao)
+- [Desafio 1: database queries](https://github.com/lfnd0/ignite-desafio1-database-queries)
