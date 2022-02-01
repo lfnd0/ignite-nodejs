@@ -34,15 +34,15 @@
     - Testes realizados nos serviços/funcionalidades/regras de negócio;
     - Testes de casos de sucesso e casos de erros;
     - Não é testado o acesso a APIs externas;
-    - Garantem que a lógica do négócio está bem definida.
+    - Garantem que a lógica do negócio está bem definida.
   - Testes de integração:
-    - Testes realizados para verificar a aplicação inteira;
+    - São testes realizados para verificar a aplicação inteira;
     - Verificação do fluxo completo da aplicação;
     - Verificação dos fluxos externos da aplicação (conexão com o banco de dados, acesso a APIs externas, envio de e-mails e etc.).
 - TDD:
   - Metodologia usada para criação de testes;
   - Iniciar criando os testes, para só depois implementar as funcionalidades em si.
 - Vantagens do uso de testes:
-  - Se uma regra de negócio mudar, o teste implementado aponta esta diferença;
+  - Apontar as mudanças das regras de negócio através dos testes criados;
   - Minimizar o "caos" oriundo dos erros no estágio de produção;
-  - Auxilia no entendimento implementações realizadas aplicação.
+  - Auxiliar no entendimento das implementações realizadas aplicação.
