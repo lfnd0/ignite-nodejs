@@ -1,15 +1,58 @@
-describe("SumNumbers", () => {
-  it("Hope that 2 + 2 is 4", () => {
-    const sum = 2 + 2;
-    const result = 4;
+import { AppError } from "../../../../errors/AppError";
+import { CategoriesRepositoryInMemory } from "../../repositories/in-memory/CategoriesRepositoryInMemory";
+import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 
-    expect(sum).toBe(result);
+let categoriesRepositoryInMemory: CategoriesRepositoryInMemory;
+let createCategoryUseCase: CreateCategoryUseCase;
+
+describe("CreateCategory", () => {
+  beforeEach(() => {
+    categoriesRepositoryInMemory = new CategoriesRepositoryInMemory();
+    createCategoryUseCase = new CreateCategoryUseCase(
+      categoriesRepositoryInMemory
+    );
   });
 
-  it("Hope that 2 + 2 is not 5", () => {
-    const sum = 2 + 2;
-    const result = 5;
+  it("Should be able to create a new category", async () => {
+    const category = {
+      name: "Category test",
+      description: "Category description test",
+    };
 
-    expect(sum).not.toBe(result);
+    await createCategoryUseCase.execute({
+      name: category.name,
+      description: category.description,
+    });
+
+    const categoryCreated = await categoriesRepositoryInMemory.findByName(
+      category.name
+    );
+
+    expect(categoryCreated).toHaveProperty("id");
+  });
+
+  it("Should not be able to create a new category with name exists", async () => {
+    expect(async () => {
+      const category = {
+        name: "Category test",
+        description: "Category description test",
+      };
+
+      await createCategoryUseCase.execute({
+        name: category.name,
+        description: category.description,
+      });
+
+      await createCategoryUseCase.execute({
+        name: category.name,
+        description: category.description,
+      });
+
+      const categoryCreated = await categoriesRepositoryInMemory.findByName(
+        category.name
+      );
+
+      expect(categoryCreated).toHaveProperty("id");
+    }).rejects.toBeInstanceOf(AppError);
   });
 });
