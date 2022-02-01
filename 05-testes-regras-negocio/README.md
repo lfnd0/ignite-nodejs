@@ -22,7 +22,27 @@
 </p>
 
 ### Objetivos do módulo:
-- Entende testes e quais os seus tipos;
-- Entender e aplicar o TDD (Test Driven Development/Desenvolvimento Orientado por Testes);
+- Entender testes e quais os seus tipos;
+- Entender e aplicar o TDD (Test Driven Development/Desenvolvimento Dirigido por Testes);
 - Aprender e implementar as regras de negócio;
 - Analisar os requisitos da aplicação.
+
+### Conhecendo os tipos de testes
+- Tipos de testes:
+  - Testes unitários:
+    - São testes realizados em "pedaços"/unidades da aplicação;
+    - Testes realizados nos serviços/funcionalidades/regras de negócio;
+    - Testes de casos de sucesso e casos de erros;
+    - Não é testado o acesso a APIs externas;
+    - Garantem que a lógica do négócio está bem definida.
+  - Testes de integração:
+    - Testes realizados para verificar a aplicação inteira;
+    - Verificação do fluxo completo da aplicação;
+    - Verificação dos fluxos externos da aplicação (conexão com o banco de dados, acesso a APIs externas, envio de e-mails e etc.).
+- TDD:
+  - Metodologia usada para criação de testes;
+  - Iniciar criando os testes, para só depois implementar as funcionalidades em si.
+- Vantagens do uso de testes:
+  - Se uma regra de negócio mudar, o teste implementado aponta esta diferença;
+  - Minimizar o "caos" oriundo dos erros no estágio de produção;
+  - Auxilia no entendimento implementações realizadas aplicação.
