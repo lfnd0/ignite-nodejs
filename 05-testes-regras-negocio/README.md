@@ -46,3 +46,6 @@
   - Apontar as mudanças das regras de negócio através dos testes criados;
   - Minimizar o "caos" oriundo dos erros no estágio de produção;
   - Auxiliar no entendimento das implementações realizadas aplicação.
+
+### Criando o primeiro teste:
+Documentação do [Jest](https://jestjs.io/pt-BR/docs/getting-started).
