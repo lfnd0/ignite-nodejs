@@ -4,10 +4,7 @@ export class AlterUserDeleteUsername1643220821888
   implements MigrationInterface
 {
   public async up(queryRunner: QueryRunner): Promise<void> {
-    try {
-      await queryRunner.dropColumn("users", "username");
-      // eslint-disable-next-line no-empty
-    } catch {}
+    await queryRunner.dropColumn("users", "username");
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
