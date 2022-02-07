@@ -49,3 +49,53 @@
 
 ### Criando o primeiro teste:
 Documentação do [Jest](https://jestjs.io/pt-BR/docs/getting-started).
+
+### Requisitos da aplicação:
+- Definições:
+  - Requisitos Funcionais (RF): são os requisitos que refletem sobre as funcionalidades da aplicação. Por exemplo, “deve ser possível um usuário pode criar o cadastro de categorias”.
+  - Requisitos Não Funcionais (RNF):  são requisitos que não refletem necessariamente as regras de negócio e/ou funcionalidades do sistema. Por exemplo, “o banco de dados adotado para este projeto é o PostgreSQL”.
+  - Regras de Negócio (RN): estão relacionadas ao detalhamento dos RF. Por exemplo, “não deve se possível cadastrar uma categoria com um nome já existente”.
+
+- Descrição dos requisitos da aplicação:
+  - Cadastro de um carro:
+    - RF:
+      - Deve ser possível cadastrar um novo carro;
+      - Deve ser possível listar todas as categorias.
+    - RN:
+      - Não deve ser possível cadastrar um carro com uma placa já existente;
+      - Não deve ser possível alterar a placa de um carro já cadastrado;
+      - O carro deve ser cadastrado, por padrão, como diponível;
+      - O usuário responsável pelo cadastro de um carro deve ser um administrador.
+  - Listagem de carros:
+    - RF:
+      - Deve ser possível listar todos os carros disponíveis para aluguel;
+      - Dever ser possível listar todos os carros disponíveis pelo nome da categoria;
+      - Dever ser possível listar todos os carros disponíveis pelo nome da marca;
+      - Dever ser possível listar todos os carros disponíveis pelo nome do carro.
+    - RN:
+      - O usuário não precisa estar autenticado no sistema para listar os carros disponíveis.
+  - Cadastro de especificações no carro:
+    - RF:
+      - Deve ser possível cadastrar uma especificação para um carro;
+      - Deve ser possível listar todas as especificações;
+      - Dever ser possível listar todos os carros.
+    - RN:
+      - Não deve ser possível cadastrar uma especificação para um carro que não está cadastrado;
+      - Não deve ser possível cadastrar uma especificação já existente para o mesmo carro;
+      - O usuário responsável pelo cadastro de uma especificação deve ser um administrador.
+  - Cadastro de imagens do carro:
+    - RF:
+      - Deve ser possível cadastrar a imagem do carro;
+      - Deve ser possível listar as imagens dos carros.
+    - RNF:
+      - Utilizar o Multer para o upload dos arquivos.
+    - RN:
+      - O usuário deve poder cadastrar mais de uma imagem para o mesmo carro;
+      - O usuário responsável pelo cadastro deve ser um administrador.
+  - Aluguel de carro:
+    - RF:
+      - Deve ser possível cadastrar um aluguel.
+    - RN:
+      - O aluguel dever ter duração mínima de 24h;
+      - Não deve ser possível cadastrar um novo aluguel, caso já exista um aluguel aberto para o mesmo usuário;
+      - Não deve ser possível cadastrar um novo aluguel, caso já exista um aluguel aberto para o mesmo carro.

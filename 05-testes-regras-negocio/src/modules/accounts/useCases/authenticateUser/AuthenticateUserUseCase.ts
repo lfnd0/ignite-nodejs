@@ -55,4 +55,5 @@ class AuthenticateUserUseCase {
     return tokenReturn;
   }
 }
+
 export { AuthenticateUserUseCase };
