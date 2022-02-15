@@ -81,8 +81,7 @@ Documentação do [Jest](https://jestjs.io/pt-BR/docs/getting-started).
       - O usuário responsável pelo cadastro de uma especificação deve ser um administrador.
   - Cadastro de imagens do carro:
     - RF:
-      - Deve ser possível cadastrar a imagem do carro;
-      - Deve ser possível listar as imagens dos carros.
+      - Deve ser possível cadastrar a imagem do carro.
     - RNF:
       - Utilizar o Multer para o upload dos arquivos.
     - RN:
