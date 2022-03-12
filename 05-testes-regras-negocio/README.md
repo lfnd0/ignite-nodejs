@@ -93,4 +93,5 @@ Documentação do [Jest](https://jestjs.io/pt-BR/docs/getting-started).
     - RN:
       - O aluguel dever ter duração mínima de 24h;
       - Não deve ser possível cadastrar um novo aluguel, caso já exista um aluguel aberto para o mesmo usuário;
-      - Não deve ser possível cadastrar um novo aluguel, caso já exista um aluguel aberto para o mesmo carro.
+      - Não deve ser possível cadastrar um novo aluguel, caso já exista um aluguel aberto para o mesmo carro;
+      - O usuário deve estar logado na aplicação.
