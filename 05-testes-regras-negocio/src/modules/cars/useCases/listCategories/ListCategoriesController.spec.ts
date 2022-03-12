@@ -17,8 +17,7 @@ describe("Create category controller", () => {
     const password = await hash("admin", 8);
 
     await connection.query(
-      `INSERT INTO USERS(id, name, email, password, driver_license, "isAdmin", created_at)
-      values('${id}', 'admin', 'admin@email.com.br', '${password}', '99029905039', true, 'now()')`
+      `INSERT INTO USERS(id, name, email, password, driver_license, "isAdmin", created_at) values('${id}', 'admin', 'admin@email.com.br', '${password}', '99029905039', true, 'now()')`
     );
   });
 
@@ -27,7 +26,7 @@ describe("Create category controller", () => {
     await connection.close();
   });
 
-  it("Should be able to create a new category.", async () => {
+  it("Should be able to list all categories.", async () => {
     const reponseToken = await request(app).post("/sessions").send({
       email: "admin@email.com.br",
       password: "admin",
@@ -35,7 +34,7 @@ describe("Create category controller", () => {
 
     const { token } = reponseToken.body;
 
-    const response = await request(app)
+    await request(app)
       .post("/categories")
       .send({
         name: "Category Supertest name",
@@ -45,27 +44,11 @@ describe("Create category controller", () => {
         Authorization: `Bearer ${token}`,
       });
 
-    expect(response.status).toBe(201);
-  });
+    const response = await request(app).get("/categories");
 
-  it("Should not be able to create a new category with name exists.", async () => {
-    const reponseToken = await request(app).post("/sessions").send({
-      email: "admin@email.com.br",
-      password: "admin",
-    });
-
-    const { token } = reponseToken.body;
-
-    const response = await request(app)
-      .post("/categories")
-      .send({
-        name: "Category Supertest name",
-        description: "Category Supertest description",
-      })
-      .set({
-        Authorization: `Bearer ${token}`,
-      });
-
-    expect(response.status).toBe(400);
+    expect(response.status).toBe(200);
+    expect(response.body.length).toBe(1);
+    expect(response.body[0]).toHaveProperty("id");
+    expect(response.body[0].name).toEqual("Category Supertest name");
   });
 });
