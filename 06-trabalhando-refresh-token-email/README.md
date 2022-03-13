@@ -24,3 +24,19 @@
 - Integrar o envio de e-mail;
 - Criar template para o envio de e-mail para o reset da senha;
 - Implementar novos os testes.
+
+### Requisitos da aplicação:
+- Descrição de novos requisitos da aplicação:
+  - Aluguel de carro:
+    - RN:
+      - Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível.
+  - Devolução de carro:
+    - RF:
+      - Deve ser possível realizar a devolução de um carro.
+    - RN:
+      - Se o carro for devolvido com menos de 24h, deverá ser cobrado diária completa;
+      - Ao realizar a devolução, o carro deverá ser liberado para outro aluguel;
+      - Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel;
+      - Ao realizar a devolução, deverá ser calculado o total do aluguel;
+      - Caso o horário de devolução seja superior ao horário previsto de entrega, deverá ser cobrada multa proporcional aos dias de atraso;
+      - Caso haja multa, deverá ser somado ao total do aluguel.
