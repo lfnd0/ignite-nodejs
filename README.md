@@ -45,4 +45,4 @@
 ### Chapter IV
 - [Testes e regras de negócio](05-testes-regras-negocio)
 - [Desafio 1: testes unitários](https://github.com/lfnd0/ignite-desafio1-testes-unitarios)
-
+- [Desafio 2: testes de integração](https://github.com/lfnd0/ignite-desafio2-testes-integracao)
